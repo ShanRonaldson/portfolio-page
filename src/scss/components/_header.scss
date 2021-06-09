@@ -1,0 +1,12 @@
+.header{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+ 
+&--main{
+    color: pink;
+    background-color: green;
+    height: 30vh;
+  
+}
+}

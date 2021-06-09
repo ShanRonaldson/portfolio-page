@@ -1,0 +1,32 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; //defines what 1rem equals (10px) / 1rem = 10px; 10px/16px = 65.5%
+
+  @include respond(tablet-land) {
+    font-size: 56.25%; //want 1rem = 9px; 9px/16px =56.25%
+  }
+
+  @include respond(tablet-port) {
+    font-size: 50%; //want 1rem = 8px; 8px/16px =50%
+  }
+
+  @include respond(big-desk) {
+    font-size: 75%; //want 1 rem = 12px = 12/16 = 75%
+  }
+}
+
+body {
+  padding: 3rem;
+  box-sizing: border-box;
+
+  @include respond(tablet-land) {
+    padding: 0;
+  }
+}
