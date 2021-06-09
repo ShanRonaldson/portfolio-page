@@ -1,7 +1,7 @@
 
 export function Contact(){
     return(
-        <div>
+        <div className="content">
             Contact
         </div>
     )

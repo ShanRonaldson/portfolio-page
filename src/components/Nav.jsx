@@ -7,18 +7,26 @@ import { Portfolio } from "../pages/PortfolioPage";
 export function Nav() {
   return (
     <Router>
-      <div className="nav--Router">
-        <ul className="nav--Router__ul">
-          <li className="nav--Router__li">
-            <Link to="/">Home</Link>
-          </li>
-          <li className="nav--Router__li">
-            <Link to="/portfolio">Portfolio</Link>
-          </li>
-          <li className="nav--Router__li">
-            <Link to="/contact">Contact</Link>
-          </li>
-        </ul>
+      <div className="nav">
+        <div className="nav--Router">
+          <ul className="nav--Router__ul">
+            <li className="nav--Router__li">
+              <Link to="/" className="nav--Router__Link">
+                Home
+              </Link>
+            </li>
+            <li className="nav--Router__li">
+              <Link to="/portfolio" className="nav--Router__Link">
+                Portfolio
+              </Link>
+            </li>
+            <li className="nav--Router__li">
+              <Link to="/contact" className="nav--Router__Link">
+                Contact
+              </Link>
+            </li>
+          </ul>
+        </div>
 
         <hr />
         <Switch>

@@ -25,3 +25,25 @@
     font-style: normal;
     font-display: swap;
 }
+
+
+h1{
+    font-family: $title-font;
+    font-size: 5rem;
+    font-weight: 100;
+}
+
+h2, h3, h4, h5, h6{
+    font-family: $subtitle-font;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    &:link,
+    &:visited{
+        text-decoration: none;
+    }
+}
