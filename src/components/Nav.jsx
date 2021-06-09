@@ -1,8 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import { Contact } from "../base/ContactPage";
-import { Home } from "../base/HomePage";
-import { Portfolio } from "../base/PortfolioPage";
+import { Contact } from "../pages/ContactPage";
+import { Home } from "../pages/HomePage";
+import { Portfolio } from "../pages/PortfolioPage";
 
 export function Nav() {
   return (
