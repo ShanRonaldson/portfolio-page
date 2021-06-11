@@ -15,7 +15,7 @@ export function Home() {
         <h3 className="home__heading">About Me</h3>
 
         <div className="home--bio__content">
-          <p className="home--box__para top__left">
+          <p className="home--box__para row1__left">
             Originally from Stellenbosch, South Africa I moved to Helsinki,
             Finland late August 2019. Since moving to Finland I have worked as a
             copywriter for VeraContent, as well as a freelancer in my own
@@ -27,11 +27,11 @@ export function Home() {
             and travel websites.
           </p>
 
-          <div className="home__shape top__right">
+          <div className="home__shape row1__right">
             <img src={image} alt="placeholder" className="home--box__img" />
           </div>
 
-          <p className="home--box__para middle__right">
+          <p className="home--box__para row2__right">
             Through VeraContent I realized I really enjoyed content creation,
             which lead me to complete various content creation and social media
             strategy courses through Udemy. While doing SEO courses I started to
@@ -40,17 +40,17 @@ export function Home() {
             problems allowed me to enjoy development to a level which I never
             thought I would.
           </p>
-          <div className="home__shape middle__left">
+          <div className="home__shape row2__left">
             <img src={image} alt="placeholder" className="home--box__img " />
           </div>
 
-          <p className="home--box__para bottom__left">
+          <p className="home--box__para row3__left">
             After doing a web development boot-camp, and advanced CSS course
             through Udemy - I applied to Haaga Helia Polytechnic University
             where I am currently studying Business Information Technology, with
             a focus on software engineering and design.
           </p>
-          <div className="home__shape bottom__right">
+          <div className="home__shape row3__right">
             <img src={image} alt="placeholder" className="home--box__img " />
           </div>
         </div>
@@ -58,36 +58,44 @@ export function Home() {
 
       <section className="home--skills">
         <h3 className="home__heading">My Skills</h3>
+
         <div className="home--skills__content">
-          <div className="home--skills__svgWrapper">
+          <div className="home--skills__svgWrapper row1__left">
             <Creative />
           </div>
-          <p className="home--skills__item">Creative</p>
-          <div className="home--skills__svgWrapper">
+
+          <div className="home--skills__svgWrapper row1__middle">
             <Organized />
           </div>
-          <p className="home--skills__item">Organized</p>
-          <div className="home--skills__svgWrapper">
-            <Solution />
-          </div>
-          <p className="home--skills__item">
-            Love to solve problems in efficient ways
-          </p>
-          <div className="home--skills__svgWrapper">
-            <Motivated />
-          </div>
-          <p className="home--skills__item">Self-motivated</p>
-          <div className="home--skills__svgWrapper">
+
+          <div className="home--skills__svgWrapper row1__right">
             <Fun />
           </div>
-          <p className="home--skills__item">Enthusiastic</p>
-          <div className="home--skills__svgWrapper">
+
+          <p className="home--skills__item row2__left">Creative</p>
+          <p className="home--skills__item row2__middle">Organized</p>
+          <p className="home--skills__item row2__right">Enthusiastic</p>
+
+          <div className="home--skills__svgWrapper row3__left">
+            <Motivated />
+          </div>
+
+          <div className="home--skills__svgWrapper row3__middle">
+            <Solution />
+          </div>
+
+          <div className="home--skills__svgWrapper row3__right">
             <Fast />
           </div>
-          <p className="home--skills__item">
+          <p className="home--skills__item row4__left">Self-motivated</p>
+
+          <p className="home--skills__item row4__middle">
+            Love to solve problems in efficient ways
+          </p>
+
+          <p className="home--skills__item row4__right">
             Used to working in relatively fast-paced environments
           </p>
-          <div className="home--skills__svgWrapper"></div>
         </div>
       </section>
 

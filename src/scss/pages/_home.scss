@@ -35,7 +35,12 @@
     @include round-img;
   }
 
-
+&--skills{
+  &__item{
+    width: 15rem;
+    text-align: center;
+  }
+}
 
 
 

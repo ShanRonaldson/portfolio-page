@@ -1,42 +1,85 @@
 // grid layout
-.top {
+.row1 {
   &__left {
-    grid-area: top-left;
+    grid-area: row1-left;
+  }
+
+  &__middle {
+    grid-area: row1-middle;
   }
 
   &__right {
-    grid-area: top-right;
+    grid-area: row1-right;
   }
 }
 
-.middle {
+.row2 {
   &__left {
-    grid-area: middle-left;
+    grid-area: row2-left;
+  }
+
+  &__middle {
+    grid-area: row2-middle;
   }
 
   &__right {
-    grid-area: middle-right;
+    grid-area: row2-right;
   }
 }
 
-.bottom {
+.row3 {
   &__left {
-    grid-area: bottom-left;
+    grid-area: row3-left;
+  }
+
+  &__middle {
+    grid-area: row3-middle;
   }
 
   &__right {
-    grid-area: bottom-right;
+    grid-area: row3-right;
   }
 }
 
-.home--bio__content {
-  display: grid;
-  grid-template-columns: $grid-column-space auto $grid-column-space-small auto $grid-column-space;
-  grid-template-rows: $grid-rows-space;
+.row4{
+  &__left{
+    grid-area: row4-left;
+  }
 
-  row-gap: $row-gap-space;
-  grid-template-areas:
-    ". top-left . top-right ."
-    ". middle-left . middle-right . "
-    ". bottom-left . bottom-right . ";
+  &__middle{
+    grid-area: row4-middle;
+  }
+
+  &__right{
+    grid-area: row4-right;
+  }
+}
+
+// grid layout for home bio section
+.home {
+  &--bio__content {
+    display: grid;
+    grid-template-columns: $grid-column-space auto $grid-column-space-small auto $grid-column-space;
+    grid-template-rows: $grid-rows-space;
+
+    row-gap: $row-gap-space;
+    grid-template-areas:
+      ". row1-left . row1-right ."
+      ". row2-left . row2-right . "
+      ". row3-left . row3-right . ";
+  }
+
+  &--skills__content {
+    display: grid;
+    grid-template-columns: 27% 15% 15% 15% 27%;
+    grid-template-rows: auto;
+    row-gap: $row-gap-space;
+    justify-items: center;
+  
+    grid-template-areas:
+      ". row1-left row1-middle row1-right ."
+      ". row2-left row2-middle row2-right ."
+      ". row3-left row3-middle row3-right ."
+      ". row4-left row4-middle row4-right .";
+  }
 }
