@@ -25,10 +25,16 @@ export function Home() {
             problems allowed me to enjoy development to a level which I never
             thought I would.
           </p>
-
-          <p className="home--bio__para right">
-            After doing a web development boot-camp, and advanced CSS course
-            through Udemy - I applied to Haaga Helia Polytechnic University
+            <img
+              src={require("../images/placeholder.jpg")}
+              alt="placeholder"
+              className="home--bio__img"
+            />
+          </div>
+          <div className="home--box">
+            <p className="home--bio__para left">
+              After doing a web development boot-camp, and advanced CSS course
+              through Udemy - I applied to Haaga Helia Polytechnic University
             where I am currently studying Business Information Technology, with
             a focus on software engineering and design.
           </p>
