@@ -41,22 +41,23 @@
   }
 }
 
-.row4{
-  &__left{
+.row4 {
+  &__left {
     grid-area: row4-left;
   }
 
-  &__middle{
+  &__middle {
     grid-area: row4-middle;
   }
 
-  &__right{
+  &__right {
     grid-area: row4-right;
   }
 }
 
-// grid layout for home bio section
+// grid layout for home
 .home {
+  //grid layout for home bio section
   &--bio__content {
     display: grid;
     grid-template-columns: $grid-column-space auto $grid-column-space-small auto $grid-column-space;
@@ -69,13 +70,15 @@
       ". row3-left . row3-right . ";
   }
 
+  //grid layout for home skill section
+
   &--skills__content {
     display: grid;
     grid-template-columns: 27% 15% 15% 15% 27%;
     grid-template-rows: auto;
     row-gap: $row-gap-space;
     justify-items: center;
-  
+
     grid-template-areas:
       ". row1-left row1-middle row1-right ."
       ". row2-left row2-middle row2-right ."

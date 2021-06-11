@@ -1,8 +1,8 @@
-import { Organized } from "../svg/Organized";
 import TechSpecs from "../components/TechSpecs";
 
 import image from "../images/placeholder.jpg";
 import { Creative } from "../svg/Creative";
+import { Organized } from "../svg/Organized";
 import { Fast } from "../svg/Fast";
 import { Fun } from "../svg/Fun";
 import { Motivated } from "../svg/Motivated";
@@ -11,7 +11,7 @@ import { Solution } from "../svg/Solution";
 export function Home() {
   return (
     <div className="home">
-      <section className="home--bio">
+      <section className="home--bio margin-bottom-med">
         <h3 className="home__heading">About Me</h3>
 
         <div className="home--bio__content">
@@ -56,10 +56,10 @@ export function Home() {
         </div>
       </section>
 
-      <section className="home--skills">
+      <section className="home--skills margin-bottom-med">
         <h3 className="home__heading">My Skills</h3>
 
-        <div className="home--skills__content">
+        <div className="home--skills__content margin-top-small">
           <div className="home--skills__svgWrapper row1__left">
             <Creative />
           </div>
@@ -99,23 +99,34 @@ export function Home() {
         </div>
       </section>
 
-      <section className="home--tech">
-        <h3 className="home__heading">Tech specs</h3>
-        <TechSpecs language="HTML and CSS" rating="4" />
+      <section className="home--tech margin-bottom-med">
+        <h3 className="home__heading margin-bottom-small">Tech specs</h3>
 
-        <TechSpecs language="JavaScript" rating="3" />
-        <TechSpecs language="Node.JS" rating="3" />
+        <div className="home--tech__content">
+          <TechSpecs language="HTML and CSS" rating="4" />
+          <TechSpecs language="Copywriting" rating="4"/>
 
-        <TechSpecs language="React" rating="2.5" />
+          <TechSpecs language="Design" rating="3.5"/>
 
-        <TechSpecs language="Git" rating="2.5" />
+          <TechSpecs language="JavaScript" rating="3" />
+          <TechSpecs language="Node.JS" rating="3" />
+          <TechSpecs language="GitHub" rating="3"/>
+          <TechSpecs language="Content creation" rating="3"/>
 
-        <TechSpecs language="MongoDB" rating="2" />
-        <TechSpecs language="R" rating="2" />
+          <TechSpecs language="React" rating="2.5" />
+          <TechSpecs language="jQuery" rating="2.5"/>
+          <TechSpecs language="Express.JS" rating="2.5"/>
+          <TechSpecs language="Git" rating="2.5" />
 
-        <TechSpecs language="TypeScript" rating="1.5" />
-        <TechSpecs language="Java" rating="1" />
-        <TechSpecs language="Python" rating="1" />
+          <TechSpecs language="MongoDB" rating="2" />
+          <TechSpecs language="R" rating="2" />
+          <TechSpecs language="REST API" rating="2"/>
+          <TechSpecs language="SEO" rating="2"/>
+
+          <TechSpecs language="TypeScript" rating="1.5" />
+          <TechSpecs language="Java" rating="1" />
+          <TechSpecs language="Python" rating="1" />
+        </div>
       </section>
     </div>
   );

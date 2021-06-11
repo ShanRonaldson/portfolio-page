@@ -1,0 +1,10 @@
+.spec{
+
+    &__rating{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+
+        padding: 2rem;
+    }
+}

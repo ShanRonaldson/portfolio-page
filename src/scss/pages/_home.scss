@@ -36,12 +36,22 @@
 
   &--skills {
     &__item {
-      width: 15rem;
+      width: $img-size-small;
       text-align: center;
     }
   }
 
   &--tech {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__content {
+      width: $full-vh-width;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  
+    }
   }
 }
