@@ -1,0 +1,48 @@
+// grid layout
+.top {
+    &__left {
+      grid-area: top-left;
+      background-color: pink;
+      justify-self: center;
+    }
+  
+    &__right {
+      grid-area: top-right;
+      background-color: purple;
+    }
+  }
+  
+  .middle {
+    &__left {
+      grid-area: middle-left;
+      background-color: indigo;
+    }
+  
+    &__right {
+      grid-area: middle-right;
+      background-color: red;
+    }
+  }
+  
+  .bottom {
+    &__left {
+      grid-area: bottom-left;
+      background-color: gold;
+    }
+  
+    &__right {
+      grid-area: bottom-right;
+      background-color: teal;
+    }
+  }
+  
+  .home--bio__content {
+    display: grid;
+    grid-template-columns: 50% 45%;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "top-left top-right"
+      "middle-left middle-right"
+      "bottom-left bottom-right";
+  }
+  

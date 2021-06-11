@@ -1,9 +1,32 @@
-.home{
+.home {
+  font-size: 1.3rem;
+  line-height: 1.7;
+  padding: 2rem 0;
 
-&--bio{
+  &__heading {
+    font-size: 1.65rem;
+    text-align: center;
+  }
+
+  &--bio {
     display: flex;
-    flex-direction: column;
-    
-}
+    flex-flow: column wrap;
+  }
+  &--box {
+    display: flex;
 
+    &__para {
+      padding: 0 1rem 0.5rem;
+    }
+
+    &__img {
+      width: 20%;
+
+      padding: 0 1rem 0.5rem;
+    }
+  }
+
+  &--tech {
+    display: flex;
+  }
 }

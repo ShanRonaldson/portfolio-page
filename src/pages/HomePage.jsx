@@ -1,13 +1,16 @@
 import TechSpecs from "../components/TechSpecs";
 
+import image from "../images/placeholder.jpg";
+
 export function Home() {
   return (
     <div className="home">
       <section className="home--bio">
-        <h3 className="home--bio__heading">About Me</h3>
+        <h3 className="home__heading">About Me</h3>
 
         <div className="home--bio__content">
-          <p className="home--bio__para left">
+          {/* <div className="home--box left"> */}
+          <p className="home--box__para top__left">
             Originally from Stellenbosch, South Africa I moved to Helsinki,
             Finland late August 2019. Since moving to Finland I have worked as a
             copywriter for VeraContent, as well as a freelancer in my own
@@ -16,7 +19,16 @@ export function Home() {
             simple, and I just needed to increase their presence on their
             Instagram and Facebook accounts. As a freelancer for VeraContent I
             worked on various projects, particularly for real estate listings
-            and travel websites. <br />
+            and travel websites.
+          </p>
+          <img
+            src={image}
+            alt="placeholder"
+            className="home--box__img top__right"
+          />
+          {/* </div> */}
+          {/* <div className="home--box right"> */}
+          <p className="home--box__para middle__right">
             Through VeraContent I realized I really enjoyed content creation,
             which lead me to complete various content creation and social media
             strategy courses through Udemy. While doing SEO courses I started to
@@ -25,24 +37,30 @@ export function Home() {
             problems allowed me to enjoy development to a level which I never
             thought I would.
           </p>
-            <img
-              src={require("../images/placeholder.jpg")}
-              alt="placeholder"
-              className="home--bio__img"
-            />
-          </div>
-          <div className="home--box">
-            <p className="home--bio__para left">
-              After doing a web development boot-camp, and advanced CSS course
-              through Udemy - I applied to Haaga Helia Polytechnic University
+          <img
+            src={image}
+            alt="placeholder"
+            className="home--box__img middle__left"
+          />
+          {/* </div> */}
+          {/* <div className="home--box left"> */}
+          <p className="home--box__para bottom__left">
+            After doing a web development boot-camp, and advanced CSS course
+            through Udemy - I applied to Haaga Helia Polytechnic University
             where I am currently studying Business Information Technology, with
             a focus on software engineering and design.
           </p>
+          <img
+            src={image}
+            alt="placeholder"
+            className="home--box__img bottom__right"
+          />
+          {/* </div> */}
         </div>
       </section>
 
       <section className="home--skills">
-        <h3 className="home--skills__heading">My Skills</h3>
+        <h3 className="home__heading">My Skills</h3>
         <div className="home--skills__content">
           <ul className="home--skills__ul">
             <li className="home--skills__li">Creative</li>
@@ -60,7 +78,7 @@ export function Home() {
       </section>
 
       <section className="home--tech">
-        <h3 className="home--tech__heading">Tech specs</h3>
+        <h3 className="home__heading">Tech specs</h3>
         <TechSpecs language="HTML and CSS" rating="4" />
 
         <TechSpecs language="JavaScript" rating="3" />
