@@ -1,0 +1,11 @@
+.contact {
+  &--content {
+    display: flex;
+    justify-content: space-around;
+    // height: 37vh;
+  }
+
+  &--info {
+    padding: 1rem;
+  }
+}

@@ -1,0 +1,75 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 45rem;
+
+  &__input {
+    font-size: $body-font-size;
+    font-family: inherit;
+    padding: 1.5rem 1.5rem;
+    border-radius: 2px;
+    background-color: pink;
+    border: none;
+    border-bottom: 3px solid transparent;
+    width: 85%;
+    display: block;
+    transition: all 0.3s;
+
+    @include respond(tablet-port) {
+      width: 100%;
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 1rem 2rem rgba($color: #022c43, $alpha: 0.1);
+      border-bottom: 3px solid greenyellow;
+    }
+
+    &:focus:invalid {
+      border-bottom: 3px solid purple;
+    }
+
+    &::-webkit-input-placeholder {
+      color: olive;
+    }
+
+    &--submit {
+      width: 25%;
+
+      &,
+      &:link,
+      &:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 1rem 2rem;
+        border-radius: 10rem;
+        transition: all 0.2s;
+        font-size: $small-font-size;
+        border: none;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__label {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-left: 2rem;
+    margin-top: 0.7rem;
+    margin-bottom: 0.7rem;
+    display: block;
+    transition: abs($number: 0.3s);
+  }
+
+  &__input:placeholder-shown + &__label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4rem);
+  }
+
+  &__message {
+    background-color: gray;
+
+    height: 15rem;
+  }
+}

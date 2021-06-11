@@ -104,24 +104,24 @@ export function Home() {
 
         <div className="home--tech__content">
           <TechSpecs language="HTML and CSS" rating="4" />
-          <TechSpecs language="Copywriting" rating="4"/>
+          <TechSpecs language="Copywriting" rating="4" />
 
-          <TechSpecs language="Design" rating="3.5"/>
+          <TechSpecs language="Design" rating="3.5" />
 
           <TechSpecs language="JavaScript" rating="3" />
           <TechSpecs language="Node.JS" rating="3" />
-          <TechSpecs language="GitHub" rating="3"/>
-          <TechSpecs language="Content creation" rating="3"/>
+          <TechSpecs language="GitHub" rating="3" />
+          <TechSpecs language="Content creation" rating="3" />
 
           <TechSpecs language="React" rating="2.5" />
-          <TechSpecs language="jQuery" rating="2.5"/>
-          <TechSpecs language="Express.JS" rating="2.5"/>
+          <TechSpecs language="jQuery" rating="2.5" />
+          <TechSpecs language="Express.JS" rating="2.5" />
           <TechSpecs language="Git" rating="2.5" />
 
           <TechSpecs language="MongoDB" rating="2" />
           <TechSpecs language="R" rating="2" />
-          <TechSpecs language="REST API" rating="2"/>
-          <TechSpecs language="SEO" rating="2"/>
+          <TechSpecs language="REST API" rating="2" />
+          <TechSpecs language="SEO" rating="2" />
 
           <TechSpecs language="TypeScript" rating="1.5" />
           <TechSpecs language="Java" rating="1" />
