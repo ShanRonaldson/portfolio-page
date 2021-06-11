@@ -66,8 +66,27 @@
     row-gap: $row-gap-space;
     grid-template-areas:
       ". row1-left . row1-right ."
-      ". row2-left . row2-right . "
-      ". row3-left . row3-right . ";
+      ". row2-left . row2-right ."
+      ". row3-left . row3-right .";
+
+    @include respond(tablet-land) {
+      grid-template-rows: auto;
+    }
+
+    @include respond(tablet-port) {
+      grid-template-columns: auto $grid-column-space-extraS auto;
+      grid-template-rows: auto;
+
+      grid-template-areas:
+        "row1-left . row1-right"
+        "row2-left . row2-right"
+        "row3-left . row3-right";
+    }
+
+    @include respond(phone){
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   //grid layout for home skill section
@@ -84,5 +103,9 @@
       ". row2-left row2-middle row2-right ."
       ". row3-left row3-middle row3-right ."
       ". row4-left row4-middle row4-right .";
+
+    @include respond(tablet-land) {
+      grid-template-columns: 5% 30% 30% 30% 5%;
+    }
   }
 }

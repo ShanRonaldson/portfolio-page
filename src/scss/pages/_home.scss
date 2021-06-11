@@ -23,15 +23,27 @@
       width: 50%;
       padding: 0 1rem;
       place-self: center;
+
+      @include respond(phone){
+        align-self: center;
+      }
     }
   }
 
   &__shape {
     @include round-shape;
+
+    @include respond(phone){
+      align-self: center;
+    }
   }
 
   &__shape img {
     @include round-img;
+
+    @include respond(phone){
+      align-self: center;
+    }
   }
 
   &--skills {
@@ -51,7 +63,20 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-  
+
+      @include respond(tablet-land) {
+        width: auto;
+      }
+
+      @include respond(phone){
+        padding: 0;
+        margin: 0;
+      }
+    }
+
+    @include respond(phone){
+      margin: 0;
+      padding: 0;
     }
   }
 }

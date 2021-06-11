@@ -1,5 +1,6 @@
 .footer {
-  flex-shrink: 0;
+
+  
   &--main {
     display: flex;
     justify-content: space-around;
@@ -11,6 +12,8 @@
       display: flex;
       justify-content: space-evenly;
       font-size: $icon-font-size;
+
+
     }
 
     &__info {
@@ -19,6 +22,12 @@
       align-items: center;
       font-size: $body-font-size;
     }
+
+    @include respond(phone){
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+    }
   }
 
   &--icons {
@@ -26,6 +35,13 @@
 
     &__icon {
       padding: 0.4rem;
+    }
+  }
+
+
+  &__link{
+    @include respond(phone){
+      padding: .5rem;
     }
   }
 }

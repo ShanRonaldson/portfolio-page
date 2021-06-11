@@ -1,3 +1,5 @@
+//text
+
 $title-font: "Sacramento", cursive;
 $title-font-size: 5rem;
 
@@ -10,22 +12,43 @@ $body-font: "Roboto", sans-serif;
 $body-font-size: 1.3rem;
 $body-line-height: 1.7;
 
-$small-font-size: .9rem;
+$med-font-size: 1rem;
+
+$small-font-size: 0.9rem;
+
+//img and icons
 
 $icon-font-size: 2.5rem;
+
+$img-size-small: 15rem;
+
+// width
 
 $main-width: 60vh;
 $full-vh-width: 125vh;
 
+// grid
+
 $grid-column-space: 6.5rem;
 $grid-column-space-small: 2rem;
+$grid-column-space-extraS: 0.5rem;
 
 $row-gap-space: 1.5rem;
 
 $grid-rows-space: 18rem;
 
-$img-size-small: 15rem;
+//other
 
 $translate-negative-small: -3rem;
 
 $border-radius-50: 50%;
+
+// colours
+
+$color-primary: pink;
+$color-primary-light: pink;
+$color-primary-dark: purple;
+
+$color-secondary: green;
+$color-secondary-light: olive;
+$color-secondary-dark: green;
