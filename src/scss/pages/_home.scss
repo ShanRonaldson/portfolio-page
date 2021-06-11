@@ -6,6 +6,7 @@
   &__heading {
     font-size: 1.65rem;
     text-align: center;
+    padding: 1rem 0;
   }
 
   &--bio {
@@ -13,17 +14,25 @@
     flex-flow: column wrap;
   }
   &--box {
-    display: flex;
-
     &__para {
-      padding: 0 1rem 0.5rem;
+      padding: 0 2rem;
+      place-self: center;
+      width: 85%;
     }
 
     &__img {
-      width: 20%;
-
-      padding: 0 1rem 0.5rem;
+      width: 50%;
+      padding: 0 1rem;
+      place-self: center;
     }
+  }
+
+  &__shape {
+    @include round-shape;
+  }
+
+  &__shape img {
+    @include round-img;
   }
 
   &--tech {

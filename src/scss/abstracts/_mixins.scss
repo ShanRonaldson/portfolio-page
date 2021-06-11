@@ -1,3 +1,63 @@
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+//change background image color
+
+@mixin my-background-image($imgpath, $color-light, $color-dark) {
+  background: {
+    image: linear-gradient(
+        to right bottom,
+        rgba($color-light, 0.801),
+        rgba($color-dark, 0.801)
+      ),
+      url($imgpath);
+    size: cover;
+    position: top;
+  }
+}
+
+// create the round shape for images
+
+@mixin round-shape {
+  width: $img-size-small;
+  height: $img-size-small;
+  float: left;
+
+  -webkit-transform: translateX($translate-negative-small);
+  transform: translateX($translate-negative-small);
+  position: relative;
+  overflow: hidden;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+
+  border-radius: $border-radius-50;
+  justify-self: center;
+
+  outline: 1px solid transparent;
+
+  @supports (clip-path: circle(0 0)) or (-webkit-clip-path: circle(0 0)) {
+    -webkit-clip-path: circle($border-radius-50 at $border-radius-50 $border-radius-50);
+    clip-path: circle($border-radius-50 at $border-radius-50 $border-radius-50);
+    -webkit-shape-outside: circle($border-radius-50 at $border-radius-50 $border-radius-50);
+    shape-outside: circle($border-radius-50 at $border-radius-50 $border-radius-50);
+    border-radius: none;
+  }
+}
+
+// make the img fit into the rounded shape above
+
+@mixin round-img {
+  width: auto;
+  height: 100%;
+  transform: scale(1.4);
+  transition: all 0.5s ease-in;
+}
+
 //media query manager
 /*
 

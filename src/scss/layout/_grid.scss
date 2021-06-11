@@ -1,48 +1,42 @@
 // grid layout
 .top {
-    &__left {
-      grid-area: top-left;
-      background-color: pink;
-      justify-self: center;
-    }
-  
-    &__right {
-      grid-area: top-right;
-      background-color: purple;
-    }
+  &__left {
+    grid-area: top-left;
   }
-  
-  .middle {
-    &__left {
-      grid-area: middle-left;
-      background-color: indigo;
-    }
-  
-    &__right {
-      grid-area: middle-right;
-      background-color: red;
-    }
+
+  &__right {
+    grid-area: top-right;
   }
-  
-  .bottom {
-    &__left {
-      grid-area: bottom-left;
-      background-color: gold;
-    }
-  
-    &__right {
-      grid-area: bottom-right;
-      background-color: teal;
-    }
+}
+
+.middle {
+  &__left {
+    grid-area: middle-left;
   }
-  
-  .home--bio__content {
-    display: grid;
-    grid-template-columns: 50% 45%;
-    grid-template-rows: auto;
-    grid-template-areas:
-      "top-left top-right"
-      "middle-left middle-right"
-      "bottom-left bottom-right";
+
+  &__right {
+    grid-area: middle-right;
   }
-  
+}
+
+.bottom {
+  &__left {
+    grid-area: bottom-left;
+  }
+
+  &__right {
+    grid-area: bottom-right;
+  }
+}
+
+.home--bio__content {
+  display: grid;
+  grid-template-columns: $grid-column-space auto $grid-column-space-small auto $grid-column-space;
+  grid-template-rows: $grid-rows-space;
+
+  row-gap: $row-gap-space;
+  grid-template-areas:
+    ". top-left . top-right ."
+    ". middle-left . middle-right . "
+    ". bottom-left . bottom-right . ";
+}

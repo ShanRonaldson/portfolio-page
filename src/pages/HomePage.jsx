@@ -9,25 +9,22 @@ export function Home() {
         <h3 className="home__heading">About Me</h3>
 
         <div className="home--bio__content">
-          {/* <div className="home--box left"> */}
           <p className="home--box__para top__left">
             Originally from Stellenbosch, South Africa I moved to Helsinki,
             Finland late August 2019. Since moving to Finland I have worked as a
             copywriter for VeraContent, as well as a freelancer in my own
             capacity. I also worked on Beagle in Mind's (an NPO) content
             creation and social media presence. My work for Beagle in Mind was
-            simple, and I just needed to increase their presence on their
+            simple, as I just needed to increase their presence on their
             Instagram and Facebook accounts. As a freelancer for VeraContent I
             worked on various projects, particularly for real estate listings
             and travel websites.
           </p>
-          <img
-            src={image}
-            alt="placeholder"
-            className="home--box__img top__right"
-          />
-          {/* </div> */}
-          {/* <div className="home--box right"> */}
+
+          <div className="home__shape top__right">
+            <img src={image} alt="placeholder" className="home--box__img" />
+          </div>
+
           <p className="home--box__para middle__right">
             Through VeraContent I realized I really enjoyed content creation,
             which lead me to complete various content creation and social media
@@ -37,25 +34,19 @@ export function Home() {
             problems allowed me to enjoy development to a level which I never
             thought I would.
           </p>
-          <img
-            src={image}
-            alt="placeholder"
-            className="home--box__img middle__left"
-          />
-          {/* </div> */}
-          {/* <div className="home--box left"> */}
+          <div className="home__shape middle__left">
+            <img src={image} alt="placeholder" className="home--box__img " />
+          </div>
+
           <p className="home--box__para bottom__left">
             After doing a web development boot-camp, and advanced CSS course
             through Udemy - I applied to Haaga Helia Polytechnic University
             where I am currently studying Business Information Technology, with
             a focus on software engineering and design.
           </p>
-          <img
-            src={image}
-            alt="placeholder"
-            className="home--box__img bottom__right"
-          />
-          {/* </div> */}
+          <div className="home__shape bottom__right">
+            <img src={image} alt="placeholder" className="home--box__img " />
+          </div>
         </div>
       </section>
 

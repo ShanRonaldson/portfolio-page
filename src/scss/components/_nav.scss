@@ -4,10 +4,9 @@
     justify-content: center;
     align-content: center;
 
-    background-color: blueviolet;
     &__ul {
       display: flex;
-      background-color: burlywood;
+
       width: $main-width;
       justify-content: space-around;
       padding: 0.5rem;
