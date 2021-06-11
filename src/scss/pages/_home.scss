@@ -1,10 +1,10 @@
 .home {
-  font-size: 1.3rem;
-  line-height: 1.7;
+  font-size: $body-font-size;
+  line-height: $body-line-height;
   padding: 2rem 0;
 
   &__heading {
-    font-size: 1.65rem;
+    font-size: $h3-font-size;
     text-align: center;
     padding: 1rem 0;
   }
@@ -12,8 +12,7 @@
   &--bio {
     display: flex;
     flex-flow: column wrap;
-  }
-  &--box {
+
     &__para {
       padding: 0 2rem;
       place-self: center;
@@ -35,15 +34,12 @@
     @include round-img;
   }
 
-&--skills{
-  &__item{
-    width: 15rem;
-    text-align: center;
+  &--skills {
+    &__item {
+      width: 15rem;
+      text-align: center;
+    }
   }
-}
-
-
-
 
   &--tech {
     display: flex;

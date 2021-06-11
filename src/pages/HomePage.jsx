@@ -15,7 +15,7 @@ export function Home() {
         <h3 className="home__heading">About Me</h3>
 
         <div className="home--bio__content">
-          <p className="home--box__para row1__left">
+          <p className="home--bio__para row1__left">
             Originally from Stellenbosch, South Africa I moved to Helsinki,
             Finland late August 2019. Since moving to Finland I have worked as a
             copywriter for VeraContent, as well as a freelancer in my own
@@ -31,7 +31,7 @@ export function Home() {
             <img src={image} alt="placeholder" className="home--box__img" />
           </div>
 
-          <p className="home--box__para row2__right">
+          <p className="home--bio__para row2__right">
             Through VeraContent I realized I really enjoyed content creation,
             which lead me to complete various content creation and social media
             strategy courses through Udemy. While doing SEO courses I started to
@@ -44,7 +44,7 @@ export function Home() {
             <img src={image} alt="placeholder" className="home--box__img " />
           </div>
 
-          <p className="home--box__para row3__left">
+          <p className="home--bio__para row3__left">
             After doing a web development boot-camp, and advanced CSS course
             through Udemy - I applied to Haaga Helia Polytechnic University
             where I am currently studying Business Information Technology, with
