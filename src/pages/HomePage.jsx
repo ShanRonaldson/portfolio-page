@@ -1,6 +1,12 @@
+import { Organized } from "../svg/Organized";
 import TechSpecs from "../components/TechSpecs";
 
 import image from "../images/placeholder.jpg";
+import { Creative } from "../svg/Creative";
+import { Fast } from "../svg/Fast";
+import { Fun } from "../svg/Fun";
+import { Motivated } from "../svg/Motivated";
+import { Solution } from "../svg/Solution";
 
 export function Home() {
   return (
@@ -53,18 +59,35 @@ export function Home() {
       <section className="home--skills">
         <h3 className="home__heading">My Skills</h3>
         <div className="home--skills__content">
-          <ul className="home--skills__ul">
-            <li className="home--skills__li">Creative</li>
-            <li className="home--skills__li">Organized</li>
-            <li className="home--skills__li">
-              Love to solve problems in efficient ways
-            </li>
-            <li className="home--skills__li">Self-motivated </li>
-            <li className="home--skills__li">Enthusiastic</li>
-            <li className="home--skills__li">
-              Used to working in relatively fast-paced environments
-            </li>
-          </ul>
+          <div className="home--skills__svgWrapper">
+            <Creative />
+          </div>
+          <p className="home--skills__item">Creative</p>
+          <div className="home--skills__svgWrapper">
+            <Organized />
+          </div>
+          <p className="home--skills__item">Organized</p>
+          <div className="home--skills__svgWrapper">
+            <Solution />
+          </div>
+          <p className="home--skills__item">
+            Love to solve problems in efficient ways
+          </p>
+          <div className="home--skills__svgWrapper">
+            <Motivated />
+          </div>
+          <p className="home--skills__item">Self-motivated</p>
+          <div className="home--skills__svgWrapper">
+            <Fun />
+          </div>
+          <p className="home--skills__item">Enthusiastic</p>
+          <div className="home--skills__svgWrapper">
+            <Fast />
+          </div>
+          <p className="home--skills__item">
+            Used to working in relatively fast-paced environments
+          </p>
+          <div className="home--skills__svgWrapper"></div>
         </div>
       </section>
 

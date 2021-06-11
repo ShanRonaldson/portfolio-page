@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export function Footer() {
   return (
     <div className="footer">
+      <hr />
       <footer className="footer--main">
         <div className="footer--main__links">
           <a
