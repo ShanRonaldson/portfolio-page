@@ -9,7 +9,7 @@ import { Solution } from "../svg/Solution";
 
 export function Home() {
   return (
-    <div className="home">
+    <div className="home margin-top-med margin-bottom-med">
       <section className="home--bio margin-bottom-med">
         <h3 className="home__heading">About Me</h3>
 
@@ -98,7 +98,7 @@ export function Home() {
         </div>
       </section>
 
-      <section className="home--tech margin-bottom-med">
+      <section className="home--tech">
         <h3 className="home__heading margin-bottom-small">Tech specs</h3>
 
         <div className="home--tech__content">

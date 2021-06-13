@@ -1,7 +1,10 @@
 .home {
   font-size: $body-font-size;
   line-height: $body-line-height;
-  padding: 2rem 0;
+
+  @include respond(phone){
+    margin: 0;
+  }
 
   &__heading {
     font-size: $h3-font-size;

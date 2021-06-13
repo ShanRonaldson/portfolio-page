@@ -1,5 +1,5 @@
 import { Header } from "../components/Header";
-import { NavRouter } from "../components/NavRouter";
+import { Nav } from "../components/Nav";
 import { Footer } from "../components/Footer";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -12,7 +12,7 @@ export function App() {
     <div className="App">
      
         <Header className="App--header"/>
-        <NavRouter className="App--content"/>
+        <Nav className="App--content"/>
         <Footer className="App--footer"/>
     </div>
   );

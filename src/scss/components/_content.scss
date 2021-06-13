@@ -1,0 +1,52 @@
+.nav {
+  &--Router {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+
+    &__ul {
+      display: flex;
+      align-self: center;
+      width: $main-width;
+      justify-content: space-around;
+      padding: 0.5rem;
+
+      animation: nav 0.2s ease-in-out forwards;
+    }
+
+    &__Link {
+      font-family: $subtitle-font;
+      text-decoration: none;
+      font-size: $subtitle-font-size;
+
+      padding: 0.3rem 0.8rem;
+
+      border: 2px outset transparent;
+      border-radius: 8px;
+
+      &:hover {
+        border: 2px inset purple;
+        border-radius: 8px;
+        color: blue;
+      }
+    }
+  }
+}
+
+.active {
+  border: 2px outset red;
+  border-radius: 8px;
+
+  color: black;
+}
+
+.fade-enter{
+  opacity: 0;
+  z-index: 1;
+}
+
+.fade-enter.fade-enter-active{
+  opacity: 1;
+  transition: opacity 250ms ease-in;
+}
