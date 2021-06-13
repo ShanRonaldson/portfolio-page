@@ -1,0 +1,36 @@
+@keyframes img-blur {
+    0%{
+        opacity: 1;
+        filter: blur(0);
+    }
+
+    20%{
+        opacity: 1;
+        filter: blur(2px);
+
+    }
+
+    40%{
+        opacity: 1;
+        filter: blur(4px);
+
+    }
+
+    60%{
+        opacity: 1;
+        filter: blur(6px);
+
+    }
+
+    80%{
+        opacity: 1;
+        filter: blur(8px);
+
+    }
+
+    100%{
+        opacity: 1;
+        filter: blur(10px);
+
+    }
+}

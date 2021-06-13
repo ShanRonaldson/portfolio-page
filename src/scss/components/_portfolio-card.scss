@@ -1,22 +1,73 @@
-.portfolio-card{
+.portfolio-card {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
 
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    justify-content: center;
+  border: 5px green solid;
+  margin: 1rem;
 
-    border: 5px green solid;
-    margin: 1rem;
+  position: relative;
+  overflow: hidden;
 
-    &__link{
-        text-align: center;
-        padding: .5rem;
-    }
+  //text to fade in on hover
+  //   &__description {
+  //     position: absolute;
+  //     top: 80%;
+  //     bottom: 20%;
+  //     z-index: 1;
+  //     opacity: 0;
+  //     transition: 10s ease-in-out;
+  //   }
 
-    &__img{
-        width: 65%;
-       border: 5px pink solid;
-    }
+  // fade in
+  //   &:hover &__description {
+  //     opacity: 1;
+  //     z-index: 200;
+  //     transition: 0s;
+  //     background-color: peru;
+  //   }
 
-   
+  &__link {
+    text-align: center;
+    padding: 0.5rem;
+  }
+
+  &__overlay {
+    z-index: 1;
+    opacity: 1;
+    background-color: transparent;
+    transition: 0s;
+  }
+
+
+  &__img {
+    width: 65%;
+    border: 5px pink solid;
+    z-index: 100;
+    transform: scale(1);
+    transition: all 0.5s ease-in;
+  }
+
+  &__caption {
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    transform: translate(-50%, 20%);
+    opacity: 0;
+    transition: all 0.5s;
+    backface-visibility: hidden;
+  }
+
+  &:hover &__caption{
+      opacity: 1;
+      transform: translate(100%, 100%);
+  }
+
+  &:hover &__img{
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform: scale(1.4);
+    filter: blur(3px) brightness(80%);
+  }
 }
