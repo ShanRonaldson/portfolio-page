@@ -1,20 +1,19 @@
 import { Header } from "../components/Header";
-import { Nav } from "../components/Nav";
+import { NavRouter } from "../components/NavRouter";
 import { Footer } from "../components/Footer";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 
-
-
-library.add(fab)
+library.add(fab);
 
 export function App() {
   return (
     <div className="App">
-      <Header />
-      <Nav />
-      <Footer />
+     
+        <Header className="App--header"/>
+        <NavRouter className="App--content"/>
+        <Footer className="App--footer"/>
     </div>
   );
 }
