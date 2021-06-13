@@ -2,6 +2,11 @@
   display: flex;
   flex-direction: column;
   width: 45rem;
+  min-height: 45vh;
+
+  @include respond(tablet-land){
+    min-height: 50vh;
+  }
 
   &__input {
     font-size: $body-font-size;
