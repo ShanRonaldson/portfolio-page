@@ -41,7 +41,13 @@ export function Content() {
         <hr />
         <div className="nav--Router__content">
           <TransitionGroup>
-            <CSSTransition timeout={300} classNames="fade" key={location.key}>
+            <CSSTransition
+              appear
+              in
+              timeout={400}
+              classNames="slide"
+              key={location.key}
+            >
               <Switch location={location}>
                 <Route path="/home" children={<Home />} />
                 <Route path="/portfolio" children={<Portfolio />} />
