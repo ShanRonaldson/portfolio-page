@@ -20,24 +20,23 @@
 
       padding: 0.3rem 0.8rem;
 
-      border: 2px outset transparent;
-      border-radius: 8px;
+      border: 2px solid transparent;
 
       &:hover {
-        border: 2px inset $color-primary;
+        @include border-gradient(bottom, $color-primary, $color-bright, 0 100%);
         border-radius: 8px;
-        color: $color-primary-light;
-        background-color: $color-primary-dark;
+        color: $color-primary-med;
       }
     }
   }
 }
 
 .active {
-  border: 2px outset $color-primary-dark;
-  border-radius: 8px;
-
   color: black;
+
+  @include border-gradient(bottom, $color-primary, $color-bright, 0 100%);
+
+
 }
 
 .slide-enter,
@@ -60,4 +59,13 @@
 .slide-exit-active {
   transform: translateX(-100%);
   opacity: 0;
+}
+
+hr {
+  @include border-gradient(
+    left,
+    $color-primary,
+    $color-primary-dark,
+    0 0 100% 0
+  );
 }

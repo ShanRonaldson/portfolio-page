@@ -12,7 +12,7 @@ export function Content() {
   return (
     <div className="nav">
       <div className="nav--Router ">
-        <ul className="nav--Router__ul margin-bottom-small">
+        <ul className="nav--Router__ul margin-top-small margin-bottom-small">
           <NavLink
             exact
             activeClassName="active"
@@ -38,7 +38,7 @@ export function Content() {
             Contact
           </NavLink>
         </ul>
-        <hr />
+<hr />
         <div className="nav--Router__content">
           <TransitionGroup>
             <CSSTransition
