@@ -1,6 +1,7 @@
 .footer {
 
-  
+
+
   &--main {
     display: flex;
     justify-content: space-around;
@@ -12,8 +13,6 @@
       display: flex;
       justify-content: space-evenly;
       font-size: $icon-font-size;
-
-
     }
 
     &__info {
@@ -23,7 +22,7 @@
       font-size: $body-font-size;
     }
 
-    @include respond(phone){
+    @include respond(phone) {
       display: flex;
       flex-direction: column;
       padding: 1rem;
@@ -38,10 +37,9 @@
     }
   }
 
-
-  &__link{
-    @include respond(phone){
-      padding: .5rem;
+  &__link {
+    @include respond(phone) {
+      padding: 0.5rem;
     }
   }
 }

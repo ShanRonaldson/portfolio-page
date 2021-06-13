@@ -8,17 +8,18 @@
     font-family: inherit;
     padding: 1rem;
     border-radius: 2px;
-    background-color: $color-primary;
-    border: none;
-    border-bottom: 3px solid transparent;
+    background-color: transparent;
+   border-bottom: 2px solid transparent;
     width: 100%;
     display: block;
     transition: all 0.3s;
 
+    @include border-gradient(bottom, $color-primary, $color-dark, 1 100%);
+
     &:focus {
       outline: none;
-      box-shadow: 0 1rem 2rem rgba($color: $color-primary-light, $alpha: 0.1);
-      border-bottom: 3px solid $color-secondary;
+      box-shadow: 0 1rem 2rem rgba($color: $color-secondary, $alpha: 0.1);
+      border-bottom: 2px solid $color-secondary;
     }
 
     &:focus:invalid {
@@ -26,24 +27,31 @@
     }
 
     &::-webkit-input-placeholder {
-      color: $color-secondary-light;
+      color: $color-primary-dark;
     }
 
     &--submit {
       width: 35%;
       align-self: center;
-
+      background-color: $color-primary-dark;
       &,
       &:link,
       &:visited {
+        color: $color-cream;
+
         text-transform: uppercase;
         text-decoration: none;
         padding: 1rem 2rem;
         border-radius: 10rem;
         transition: all 0.2s;
-        font-size: $small-font-size;
+        font-size: $med-font-size;
         border: none;
         cursor: pointer;
+      }
+
+      @include respond(tablet-land) {
+        width: 45%;
+        font-size: $body-font-size;
       }
     }
   }
@@ -51,6 +59,7 @@
   &__label {
     font-size: $med-font-size;
     font-weight: 700;
+    color: $color-secondary;
     margin-left: 2rem;
     margin-top: 0.7rem;
     margin-bottom: 0.7rem;

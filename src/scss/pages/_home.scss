@@ -17,9 +17,11 @@
     flex-flow: column wrap;
 
     &__para {
-      padding: 0 2rem;
+      padding: .5rem 2rem;
       place-self: center;
       width: 85%;
+
+      @include border-gradient(right, $color-primary, $color-primary-dark, 100% 1)
     }
 
     &__img {

@@ -1,50 +1,51 @@
 @font-face {
-    font-family: 'Open Sans';
-    src: url('../../fonts/OpenSans/OpenSans-Regular.woff2') format('woff2'),
-        url('../../fonts/OpenSans/OpenSans-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-
-@font-face {
-    font-family: 'Roboto';
-    src: url('../../fonts/Roboto/Roboto-Thin.woff2') format('woff2'),
-        url('../../fonts/Roboto/Roboto-Thin.woff') format('woff');
-    font-weight: 100;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Open Sans";
+  src: url("../../fonts/OpenSans/OpenSans-Regular.woff2") format("woff2"),
+    url("../../fonts/OpenSans/OpenSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Sacramento';
-    src: url('../../fonts/Sacramento/Sacramento-Regular.woff2') format('woff2'),
-        url('../../fonts/Sacramento/Sacramento-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Sacramento";
+  src: url("../../fonts/Sacramento/Sacramento-Regular.woff2") format("woff2"),
+    url("../../fonts/Sacramento/Sacramento-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
-
-h1{
-    font-family: $title-font;
-    font-size: $title-font-size;
-    font-weight: 100;
+body {
+  color: $color-dark;
+  font-family: $body-font;
 }
 
-h2, h3, h4, h5, h6{
-    font-family: $subtitle-font;
+h1 {
+  font-family: $title-font;
+  font-size: $title-font-size;
+  font-weight: 100;
+  color: $color-secondary;
 }
 
-ul{
-    list-style: none;
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $subtitle-font;
+  letter-spacing: 2px;
+  color: $color-primary-dark;
 }
 
-li{
-    &:link,
-    &:visited{
-        text-decoration: none;
-       
-    }
+ul {
+  list-style: none;
+}
+
+a {
+  &:link,
+  &:visited {
+    text-decoration: none;
+    color: $color-primary-dark;
+  }
 }

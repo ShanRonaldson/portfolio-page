@@ -1,25 +1,12 @@
-@mixin clearfix {
-  &::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+// gradient border
+
+@mixin border-gradient($direction, $color-light, $color-dark, $size){
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(to $direction, $color-light, $color-dark)
+    $size;
 }
 
-//change background image color
-
-@mixin my-background-image($imgpath, $color-light, $color-dark) {
-  background: {
-    image: linear-gradient(
-        to right bottom,
-        rgba($color-light, 0.801),
-        rgba($color-dark, 0.801)
-      ),
-      url($imgpath);
-    size: cover;
-    position: top;
-  }
-}
 
 // create the round shape for images
 

@@ -34,7 +34,7 @@ export function Form() {
         placeholder="Name"
         id="contact_name"
       />
-      <label for="name" className="form__label">
+      <label htmlFor="name" className="form__label">
         Name
       </label>
 
@@ -46,13 +46,13 @@ export function Form() {
         placeholder="Email"
         id="email"
       />
-      <label for="email" className="form__label">
+      <label htmlFor="email" className="form__label">
         Email
       </label>
 
     
       <textarea name="message" className="form__message form__input" required placeholder="Message"></textarea>
-      <label for="message" className="form__label">Message</label>
+      <label htmlFor="message" className="form__label">Message</label>
 
       <input type="submit" value="Send &rarr;" className="form__input--submit btn" />
     </form>

@@ -1,15 +1,12 @@
-.spec{
+.spec {
+  &__rating {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 2rem;
 
-    &__rating{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        padding: 2rem;
-
-        @include respond(phone){
-            padding: .7rem;
-        }
+    @include respond(phone) {
+      padding: 0.7rem;
     }
-
-
+  }
 }

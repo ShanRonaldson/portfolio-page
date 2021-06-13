@@ -3,9 +3,9 @@ export function PortfolioCard(props) {
     <div className="portfolio-card">
       <h4 className="portfolio-card__heading">{props.heading}</h4>
 
-      {/* <div className="portfolio-card__description">
+      <p className="portfolio-card__description">
         This is the description of the website.
-      </div> */}
+      </p>
 
       <a
         href={props.url}

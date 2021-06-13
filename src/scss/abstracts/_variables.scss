@@ -6,9 +6,9 @@ $title-font-size: 5rem;
 $subtitle-font: "Open Sans", sans-serif;
 $subtitle-font-size: 1.5rem;
 
-$h3-font-size: 1.65rem;
+$h3-font-size: 1.45rem;
 
-$body-font: "Roboto", sans-serif;
+$body-font: "Open Sans", sans-serif;
 $body-font-size: 1.3rem;
 $body-line-height: 1.7;
 
@@ -45,10 +45,34 @@ $border-radius-50: 50%;
 
 // colours
 
-$color-primary: pink;
-$color-primary-light: pink;
-$color-primary-dark: purple;
+$color-cream:#FFFFFE;
 
-$color-secondary: green;
-$color-secondary-light: olive;
-$color-secondary-dark: green;
+$color-primary: #8fd9a8;
+$color-primary-light: #FDFEFC;
+$color-primary-dark: #0a5e2e;
+
+$color-primary-med:  #65D0BE;
+
+$color-secondary: #0A3804;
+
+$color-dark: #000100;
+
+$color-grey: #E3E9E6;
+
+// other colour options
+
+// #0A5E2E
+// #0D6C3E
+// #10794F
+// #148661
+// #199275
+// #1D9E89
+// #23AA9F
+// #28b5b5
+// #3CBEB7
+// #50C7BA
+// #65D0BE
+// #7AD8C3
+// #90E0CA
+// #A6E7D2
+// #BDEEDB
