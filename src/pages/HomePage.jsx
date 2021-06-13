@@ -1,6 +1,5 @@
 import TechSpecs from "../components/TechSpecs";
 
-import image from "../images/placeholder.jpg";
 import { Creative } from "../svg/Creative";
 import { Organized } from "../svg/Organized";
 import { Fast } from "../svg/Fast";
@@ -28,7 +27,7 @@ export function Home() {
           </p>
 
           <div className="home__shape row1__right">
-            <img src={image} alt="placeholder" className="home--box__img" />
+            <img src="./home-imgs/placeholder.jpg" alt="placeholder" className="home--box__img" />
           </div>
 
           <p className="home--bio__para row2__right">
@@ -41,7 +40,7 @@ export function Home() {
             thought I would.
           </p>
           <div className="home__shape row2__left">
-            <img src={image} alt="placeholder" className="home--box__img " />
+            <img src="./home-imgs/placeholder.jpg" alt="placeholder" className="home--box__img " />
           </div>
 
           <p className="home--bio__para row3__left">
@@ -51,7 +50,7 @@ export function Home() {
             a focus on software engineering and design.
           </p>
           <div className="home__shape row3__right">
-            <img src={image} alt="placeholder" className="home--box__img " />
+            <img src="./home-imgs/placeholder.jpg" alt="placeholder" className="home--box__img " />
           </div>
         </div>
       </section>
