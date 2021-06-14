@@ -4,6 +4,8 @@
   align-items: center;
   justify-content: center;
 
+  width: 60rem;
+
   @include border-gradient(bottom, $color-primary, $color-primary-dark, 1 100%);
 
   margin-bottom: 1.5rem;
@@ -19,6 +21,14 @@
     flex-wrap: wrap;
     margin: 0;
     margin-bottom: 1rem;
+  }
+
+  @include respond(tablet-land) {
+    width: 40rem;
+  }
+
+  @include respond(tablet-port) {
+    width: 35rem;
   }
 
   &__heading {
@@ -38,18 +48,15 @@
   &__link {
     text-align: center;
 
-    @include respond(tablet-land) {
-      width: 40rem;
-    }
+ 
 
-    @include respond(tablet-port) {
-      width: 35rem;
-    }
+
+   
   }
 
   &__img {
-    width: 65%;
-    z-index: 100;
+    width: 45%;
+       z-index: 100;
     transform: scale(1);
     transition: all 0.5s ease-in;
   }
@@ -58,7 +65,7 @@
     position: absolute;
     top: 50%;
     bottom: 50%;
-    transform: translate(-50%, 20%);
+    transform: translate(-50%, 50%);
     opacity: 0;
     transition: all 0.5s;
     backface-visibility: hidden;
@@ -70,7 +77,7 @@
 
   &:hover &__caption {
     opacity: 1;
-    transform: translate(100%, 100%);
+    transform: translate(50%, 80%);
   }
 
   &:hover &__img {
