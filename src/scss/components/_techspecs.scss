@@ -5,12 +5,6 @@
     flex-wrap: nowrap;
     padding: 1rem;
 
-    &:hover{
-      @include my-box-shadow(0 1rem 2rem, 0.15);
-      border-radius: 1.5rem;
-    }
-    
-
     @include respond(phone) {
       padding: 0.7rem;
     }

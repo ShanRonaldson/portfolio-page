@@ -54,6 +54,10 @@
         cursor: pointer;
       }
 
+      &:hover {
+        @include my-box-shadow(0 .5rem 2rem, 0.5);
+      }
+
       @include respond(tablet-land) {
         width: 45%;
         font-size: $body-font-size;

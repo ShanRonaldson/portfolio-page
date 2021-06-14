@@ -41,5 +41,10 @@
   &__link {
     padding: 0.5rem;
 
+    
+  &:hover{
+    @include my-box-shadow(0 1rem 2rem, 0.2);
+    border-radius: 1rem;
+  }
   }
 }

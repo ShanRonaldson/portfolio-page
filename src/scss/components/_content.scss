@@ -26,7 +26,8 @@
         @include border-gradient(bottom, $color-primary, $color-bright, 0 100%);
         border-radius: 8px;
         color: $color-primary-med;
-  
+
+        @include my-box-shadow(0 1rem 2rem, 0.2);
       }
     }
 
