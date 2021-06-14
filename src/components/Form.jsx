@@ -13,17 +13,18 @@ export function Form() {
         "user_R6w1uubbRrlC76ohRUKHA"
       )
       .then(
-        (result) => {
-          console.log(result.text);
+        () => {
+          alert("Thank you for your email!");
         },
         (error) => {
-          console.log(error.text);
-        }
+          console.log(error.text + "Sorry an error occurred");
+        },
       );
   }
+  
 
   return (
-    <form className="form personal-contact-form" onSubmit={sendEmail}>
+    <form className="form personal-contact-form" id="form" onSubmit={sendEmail}>
       <input type="hidden" name="contact-number" className="form__input" />
 
       <input
@@ -50,11 +51,21 @@ export function Form() {
         Email
       </label>
 
-    
-      <textarea name="message" className="form__message form__input" required placeholder="Message"></textarea>
-      <label htmlFor="message" className="form__label">Message</label>
+      <textarea
+        name="message"
+        className="form__message form__input"
+        required
+        placeholder="Message"
+      ></textarea>
+      <label htmlFor="message" className="form__label">
+        Message
+      </label>
 
-      <input type="submit" value="Send &rarr;" className="form__input--submit btn" />
+      <input
+        type="submit"
+        value="Send &rarr;"
+        className="form__input--submit btn"
+      />
     </form>
   );
 }
