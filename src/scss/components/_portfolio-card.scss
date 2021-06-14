@@ -37,6 +37,10 @@
     background-color: $color-cream;
     border: 2px solid $color-cream;
     border-radius: 8px;
+
+    @include respond(tablet-land) {
+      text-align: center;
+    }
   }
 
   &__description {
@@ -44,18 +48,18 @@
 
     @include respond(tablet-land) {
       opacity: 1;
-      padding-bottom: 0.5rem;
+      padding: 0.5rem 1rem;
     }
   }
 
   &__link {
-   display: flex;
+    display: flex;
   }
 
   &__img {
     width: 45%;
     z-index: 100;
-    transform: scale(2) translate(30%,25%);
+    transform: scale(2) translate(30%, 25%);
     transition: all 0.5s ease-in;
   }
 
@@ -67,26 +71,26 @@
     opacity: 0;
     transition: all 0.5s;
     margin-bottom: 1rem;
-
   }
+  @media (hover: hover) {
+    &:hover {
+      @include my-box-shadow(0 1rem 2rem, 0.2);
+    }
 
-  &:hover {
-    @include my-box-shadow(0 1rem 2rem, 0.2);
-  }
+    &:hover &__caption {
+      opacity: 1;
+      transform: translate(20%, 100%);
+      text-shadow: 1px 1px 5px rgba($color: $color-cream, $alpha: 1);
+      width: 75%;
+      margin-bottom: 1rem;
+    }
 
-  &:hover &__caption {
-    opacity: 1;
-    transform: translate(20%, 100%);
-    text-shadow: 1px 1px 5px rgba($color: $color-cream, $alpha: 1);
-    width: 75%;
-    margin-bottom: 1rem;
-  }
-
-  &:hover &__img {
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    transform: scale(2.5) translate(30%, 25%);
-    filter: blur(3px) brightness(80%);
-    opacity: 0.5;
+    &:hover &__img {
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      transform: scale(2.5) translate(30%, 25%);
+      filter: blur(3px) brightness(80%);
+      opacity: 0.5;
+    }
   }
 }
