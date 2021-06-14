@@ -4,7 +4,7 @@
   width: 45rem;
   min-height: 45vh;
 
-  @include respond(tablet-land){
+  @include respond(tablet-land) {
     min-height: 50vh;
   }
 
@@ -13,8 +13,8 @@
     font-family: inherit;
     padding: 1rem;
     border-radius: 2px;
-    background-color: transparent;
-   border-bottom: 2px solid transparent;
+    background-color: rgba($color: $color-cream, $alpha: 0.5);
+    border-bottom: 2px solid transparent;
     width: 100%;
     display: block;
     transition: all 0.3s;
@@ -23,7 +23,7 @@
 
     &:focus {
       outline: none;
-      box-shadow: 0 1rem 2rem rgba($color: $color-secondary, $alpha: 0.1);
+      @include my-box-shadow(0 1rem 2rem, 0.2);
       border-bottom: 2px solid $color-secondary;
     }
 

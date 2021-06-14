@@ -26,7 +26,13 @@
         @include border-gradient(bottom, $color-primary, $color-bright, 0 100%);
         border-radius: 8px;
         color: $color-primary-med;
+  
       }
+    }
+
+    &__content {
+      background-color: rgba($color: $color-dark, $alpha: 0.05);
+      border-radius: 8px;
     }
   }
 }
@@ -35,8 +41,6 @@
   color: black;
 
   @include border-gradient(bottom, $color-primary, $color-bright, 0 100%);
-
-
 }
 
 .slide-enter,

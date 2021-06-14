@@ -7,6 +7,12 @@
     $size;
 }
 
+// box shadow
+
+@mixin my-box-shadow($padding, $alpha){
+  box-shadow: $padding rgba($color: $color-secondary, $alpha: $alpha);
+}
+
 
 // create the round shape for images
 
