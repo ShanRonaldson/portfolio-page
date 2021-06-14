@@ -33,7 +33,10 @@
 
   &__heading {
     z-index: 500;
-    padding-bottom: 0.5rem;
+    padding: 0.2rem;
+    background-color: $color-cream;
+    border: 2px solid $color-cream;
+    border-radius: 8px;
   }
 
   &__description {
@@ -46,18 +49,13 @@
   }
 
   &__link {
-    text-align: center;
-
- 
-
-
-   
+   display: flex;
   }
 
   &__img {
     width: 45%;
-       z-index: 100;
-    transform: scale(1);
+    z-index: 100;
+    transform: scale(2) translate(30%,25%);
     transition: all 0.5s ease-in;
   }
 
@@ -65,25 +63,30 @@
     position: absolute;
     top: 50%;
     bottom: 50%;
-    transform: translate(-50%, 50%);
+    transform: translate(20%, 0);
     opacity: 0;
     transition: all 0.5s;
-    backface-visibility: hidden;
+    margin-bottom: 1rem;
+
   }
 
-  &:hover{
-    @include my-box-shadow(0 1rem 2rem, 0.2)
+  &:hover {
+    @include my-box-shadow(0 1rem 2rem, 0.2);
   }
 
   &:hover &__caption {
     opacity: 1;
-    transform: translate(50%, 80%);
+    transform: translate(20%, 100%);
+    text-shadow: 1px 1px 5px rgba($color: $color-cream, $alpha: 1);
+    width: 75%;
+    margin-bottom: 1rem;
   }
 
   &:hover &__img {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    transform: scale(1.5);
+    transform: scale(2.5) translate(30%, 25%);
     filter: blur(3px) brightness(80%);
+    opacity: 0.5;
   }
 }

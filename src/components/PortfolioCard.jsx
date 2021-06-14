@@ -3,9 +3,7 @@ export function PortfolioCard(props) {
     <div className="portfolio-card">
       <h4 className="portfolio-card__heading">{props.heading}</h4>
 
-      <p className="portfolio-card__description">
-        This is the description of the website.
-      </p>
+      <p className="portfolio-card__description">{props.description}</p>
 
       <a
         href={props.url}
@@ -19,11 +17,10 @@ export function PortfolioCard(props) {
             alt={props.alt}
             className="portfolio-card__img"
           />
-
-          <figcaption className="portfolio-card__caption">
-            This is the description of the website
-          </figcaption>
         </figure>
+        <figcaption className="portfolio-card__caption">
+          {props.description}
+        </figcaption>
       </a>
     </div>
   );

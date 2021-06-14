@@ -46,6 +46,8 @@
   &__shape img {
     @include round-img;
 
+    
+
     @include respond(phone){
       align-self: center;
     }
@@ -55,6 +57,7 @@
     &__item {
       width: $img-size-small;
       text-align: center;
+
     }
   }
 
@@ -85,3 +88,4 @@
     }
   }
 }
+

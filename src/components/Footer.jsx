@@ -37,9 +37,16 @@ export function Footer() {
         <div className="footer--main__info">
           Created by Shannon Schrauwen in React and SCSS.
           <span>&copy; 2021</span>
+          <span>Images from Unsplash</span>
           <div className="footer--icons">
-            <FontAwesomeIcon icon={["fab", "react"]} className="footer--icons__icon"/>
-            <FontAwesomeIcon icon={["fab", "sass"]} className="footer--icons__icon"/>
+            <FontAwesomeIcon
+              icon={["fab", "react"]}
+              className="footer--icons__icon"
+            />
+            <FontAwesomeIcon
+              icon={["fab", "sass"]}
+              className="footer--icons__icon"
+            />
           </div>
         </div>
       </footer>
