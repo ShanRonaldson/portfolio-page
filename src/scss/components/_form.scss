@@ -8,6 +8,16 @@
     min-height: 50vh;
   }
 
+  &__output {
+    font-size: $body-font-size;
+    font-family: $body-font;
+    padding: 2.5rem;
+    background-color: rgba($color: $color-bright, $alpha: 0.6);
+    margin-bottom: 2rem;
+
+    @include border-gradient(bottom, $color-primary, $color-dark, 1 100%);
+  }
+
   &__input {
     font-size: $body-font-size;
     font-family: inherit;
@@ -55,7 +65,7 @@
       }
 
       &:hover {
-        @include my-box-shadow(0 .5rem 2rem, 0.5);
+        @include my-box-shadow(0 0.5rem 2rem, 0.5);
       }
 
       @include respond(tablet-land) {

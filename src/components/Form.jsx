@@ -2,29 +2,29 @@ import React from "react";
 import emailjs from "emailjs-com";
 
 export function Form() {
-  function sendEmail(e) {
+  const [showThanks, setShowThanks] = React.useState(false);
+
+  const sendEmail = async (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "personal_email",
-        "personal_contact_form",
-        e.target,
-        "user_R6w1uubbRrlC76ohRUKHA"
-      )
-      .then(
-        () => {
-          alert("Thank you for your email!");
-        },
-        (error) => {
-          console.log(error.text + "Sorry an error occurred");
-        },
-      );
-  }
-  
+    await emailjs.sendForm(
+      "personal_email",
+      "personal_contact_form",
+      e.target,
+      "user_R6w1uubbRrlC76ohRUKHA"
+    );
+
+    setShowThanks(true);
+  };
 
   return (
     <form className="form personal-contact-form" id="form" onSubmit={sendEmail}>
+      {showThanks && (
+        <div className="form__output" id="form__output">
+          Thank you for your email!
+        </div>
+      )}
+
       <input type="hidden" name="contact-number" className="form__input" />
 
       <input
