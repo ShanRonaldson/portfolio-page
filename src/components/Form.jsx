@@ -29,11 +29,11 @@ export function Form() {
 
       <input
         type="text"
-        name="contact_name"
+        name="user_name"
         className="form__input"
         required
         placeholder="Name"
-        id="contact_name"
+        id="user_name"
       />
       <label htmlFor="name" className="form__label">
         Name
@@ -41,11 +41,11 @@ export function Form() {
 
       <input
         type="email"
-        name="contact_email"
+        name="user_email"
         className="form__input"
         required
         placeholder="Email"
-        id="email"
+        id="user_email"
       />
       <label htmlFor="email" className="form__label">
         Email
