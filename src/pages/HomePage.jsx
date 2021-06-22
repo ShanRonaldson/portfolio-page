@@ -27,7 +27,7 @@ export function Home() {
           </p>
 
           <div className="home__shape row1__right">
-            <img src="./home-imgs/cape_town.jpg" alt="Cape Town" className="home--box__img" />
+            <img src="./home-imgs/cape_town_small.jpg" alt="Cape Town" className="home--box__img" />
           </div>
 
           <p className="home--bio__para row2__right">
@@ -40,7 +40,7 @@ export function Home() {
             thought I would.
           </p>
           <div className="home__shape row2__left">
-            <img src="./home-imgs/helsinki.jpg" alt="Helsinki" className="home--box__img" />
+            <img src="./home-imgs/helsinki_small.jpg" alt="Helsinki" className="home--box__img" />
           </div>
 
           <p className="home--bio__para row3__left">
@@ -50,7 +50,7 @@ export function Home() {
             a focus on software engineering and design.
           </p>
           <div className="home__shape row3__right">
-            <img src="./home-imgs/shannon.jpg" alt="Shannon Schrauwen" className="home--box__img" />
+            <img src="./home-imgs/shannon_small.jpg" alt="Shannon Schrauwen" className="home--box__img" />
           </div>
         </div>
       </section>
